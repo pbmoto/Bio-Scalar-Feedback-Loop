@@ -1,4 +1,5 @@
 # Bio-Scalar-Feedback-Loop
+
 A Python-based bio-resonance framework integrating Bio-Well GDV data with PEMF and Zero-Point hardware.
 An Algorithmic Framework for Personalized Frequency Synthesis
 Executive Summary
@@ -17,3 +18,19 @@ Key Features
 • Dynamic Entropy Reduction: Automatically adjusts amplitude based on real-time stress markers.
 • Dual-Channel Routing: Separates the "Soil" (Grounding) and "Seed" (Information) signals for stereo-spatial hardware setups.
 • Silent Integration Phase: Hard-coded 10-minute zero-point window for post-session cellular settling.
+Prerequisites
+To run the BSIL framework, you need Python 3.8+ and the following libraries:
+• numpy: For high-precision signal math.
+• pandas: For Bio-Well CSV data ingestion.
+• scipy: For generating high-fidelity audio exports.
+• plotly: For 3D field visualization.
+Install them via terminal:pip install numpy pandas scipy plotly
+2. Hardware Integration
+1. Source: Connect your PC/Laptop to an external DAC or Amplifier.
+2. Splitting the Signal: Use a stereo-to-dual-mono splitter.
+• Left Channel (White/Tip): Connect to the Suddath QEWB (The Soil).
+• Right Channel (Red/Ring): Connect to the Qi Coil (The Seed).
+3. Execution
+1. Place your latest Bio-Well CSV export in the /data folder.
+2. Run the main generator script:python generate_bio_session.py --input data/my_scan.csv
+The system will output a 25-minute Infinometry_Session.wav file calibrated to your current entropy markers.
