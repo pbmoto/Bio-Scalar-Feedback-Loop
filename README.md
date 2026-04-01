@@ -68,3 +68,5 @@ The framework operates as a precise data pipeline:
 Install the required computational stack via terminal:
 ```bash
 pip install numpy pandas scipy plotly
+2. Hardware IntegrationTo achieve a structured scalar field, hardware must be routed as follows:Signal Path: PC/DAC $\rightarrow$ Stereo-to-Dual-Mono Splitter.Left Channel (White/Tip): Interface with the Suddath QEWB (The Grounding Field).Right Channel (Red/Ring): Interface with the Qi Coil (The Information Field).3. ExecutionPlace the Bio-Well CSV export in the /data directory.Initialize the generator:Bashpython main.py --input data/current_scan.csv
+The system will output a calibrated 25-minute Bio-Scalar_Feedback_Session.wav.🗺️ Future RoadmapPhase 1: Implement Random Forest Classification to automate the detection of organ-system entropy clusters.Phase 2: Real-time Heart Rate Variability (HRV) integration for live-loop pulse modulation.Phase 3: AR/VR visualization of the toroidal field using Unity to enhance the bio-feedback visual loop.📜 License & EthicsThis project is released under the MIT License.Designed for research and bio-energetic optimization.
